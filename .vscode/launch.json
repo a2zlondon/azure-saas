@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (Permissions Service)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-permissions",
+      "program": "${workspaceFolder}/src/Saas.Identity/Saas.Permissions/Saas.Permissions.Service_v1.1/bin/Debug/net8.0/Saas.Permissions.Service.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Saas.Identity/Saas.Permissions/Saas.Permissions.Service_v1.1",
+      "stopAtEntry": false,
+      "launchBrowser": {
+        "enabled": true,
+        "args": "https://localhost:7023/swagger"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    }
+  ]
+}
